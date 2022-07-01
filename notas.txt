@@ -1,0 +1,10 @@
+
+
+Parte 1
+pm2 start index.js --name server_cluster -- --port 8081 --mode cluster pm2 start index.js --name server_fork -- --port 8080 --mode fork
+
+
+
+Parte 2
+pm2 start index.js --name server1 -- --port 8080 --mode fork pm2 start index.js --name server2 -- --port 8082 --mode fork pm2 start index.js --name server3 -- --port 8083 --mode fork pm2 start index.js --name server4 -- --port 8084 --mode fork pm2 start index.js --name server5 -- --port 8085 --mode fork
+
